@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FUENTES -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Great+Vibes&display=swap" rel="stylesheet">
+
+    <title>Nuestra Historia de Amor 💕</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ========================= -->
+<!-- VIDEO DE FONDO YOUTUBE -->
+<!-- ========================= -->
+
+<div class="video-fondo">
+    <iframe 
+        src="https://www.youtube.com/embed/B8axx7a0bM8?autoplay=1&mute=1&controls=0&loop=1&playlist=B8axx7a0bM8&modestbranding=1"
+        frameborder="0"
+        allow="autoplay; fullscreen"
+        allowfullscreen>
+    </iframe>
+</div>
+
+<!-- ========================= -->
+<!-- MÚSICA DE FONDO YOUTUBE -->
+<!-- ========================= -->
+
+<div class="musica-fondo">
+    <iframe
+        src="https://www.youtube.com/embed/Sw49gcx8bW0?autoplay=1&loop=1&playlist=Sw49gcx8bW0&controls=0"
+        frameborder="0"
+        allow="autoplay">
+    </iframe>
+</div>
+
+<!-- ========================= -->
+<!-- PANTALLA DE INICIO -->
+<!-- ========================= -->
+
+<div class="inicio" id="inicio">
+    <div class="inicio-contenido">
+        <h1>💌 Algo muy especial para ti</h1>
+        <p>No es una simple página… es nuestra historia 💖</p>
+
+        <div class="botones">
+            <button onclick="entrar()">Sí, quiero verlo 💕</button>
+            <button onclick="rechazar()">No 🙈</button>
+        </div>
+
+        <p id="mensajeNo" style="display:none;">
+            Te perdiste algo increíble de ver 😢  
+            <br><br>
+            <button onclick="volver()">Volver</button>
+        </p>
+    </div>
+</div>
+
+<!-- ========================= -->
+<!-- LIBRO -->
+<!-- ========================= -->
+
+<div class="libro" id="libro" style="display:none;">
+
+    <div class="pagina">
+
+        <h2 id="titulo"></h2>
+
+        <img id="imagen1" class="img-principal" src="" style="display:none;">
+        <img id="imagen2" class="img-principal" src="" style="display:none;">
+
+        <video id="video"
+               class="video-pagina"
+               autoplay
+               muted
+               loop
+               playsinline
+               controls
+               style="display:none;">
+               
+            <source id="videoSource" src="" type="video/mp4">
+        </video>
+
+        <p id="texto"></p>
+
+    </div>
+
+    <div class="botones">
+        <button onclick="anterior()">⬅ Anterior</button>
+        <button onclick="siguiente()">Siguiente ➡</button>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
